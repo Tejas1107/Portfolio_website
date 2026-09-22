@@ -1,882 +1,449 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tejas Pantharapalya Venkatesh | AI Engineer & Integration Specialist</title>
-    <meta name="description" content="Portfolio of Tejas Pantharapalya Venkatesh, AI Engineer and Integration Specialist pursuing an MSc in Computer Science at University College Dublin.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejas P Venkatesh | AI & Software Engineer</title>
+  <meta name="description" content="Tejas Pantharapalya Venkatesh, AI & Software Engineer in Dublin: production RAG pipelines, LLM systems, high-performance backends and cloud-native infrastructure on Azure, Docker and Kubernetes.">
+  <meta name="author" content="Tejas Pantharapalya Venkatesh">
+  <meta name="theme-color" content="#0a0b0f">
+  <link rel="canonical" href="https://tejas-pv.netlify.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tejas-pv.netlify.app/">
+  <meta property="og:title" content="Tejas P Venkatesh | AI & Software Engineer">
+  <meta property="og:description" content="I build production systems where AI meets scale: RAG, LLMs, Python, Azure, Docker. Based in Dublin, on Stamp 1G, open to Software, AI and Backend roles.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    (function () {
+      document.documentElement.classList.remove('no-js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tejas Pantharapalya Venkatesh",
+    "jobTitle": "AI & Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "Intelligenz" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University College Dublin" },
+      { "@type": "CollegeOrUniversity", "name": "Bangalore Institute of Technology" }
+    ],
+    "address": { "@type": "PostalAddress", "addressLocality": "Dublin", "addressCountry": "IE" },
+    "email": "mailto:tejaspv1107@gmail.com",
+    "url": "https://tejas-pv.netlify.app/",
+    "sameAs": ["https://www.linkedin.com/in/tejas-p-venkatesh", "https://github.com/Tejas1107"]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Printable Resume Header (Hidden on Screen, Shown in Print) -->
-    <div class="print-header">
-        <h1 id="print-name">Tejas Pantharapalya Venkatesh</h1>
-        <h2 id="print-title">AI Engineer • Integration Specialist • MSc Computer Science Candidate</h2>
-        <div class="print-contacts">
-            <span id="print-email">Email: tejasvenkatesh1107@gmail.com</span>
-            <span id="print-phone">Phone: +353 894693056</span>
-            <span id="print-location">Location: Dublin, Ireland</span>
-            <span>LinkedIn: linkedin.com/in/tejas-venkatesh</span>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="brand" aria-label="Tejas P Venkatesh, home">
+        <span class="brand-mark">TV</span>
+        <span class="brand-name">Tejas P Venkatesh</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="status-pill">
+          <span class="dot" aria-hidden="true"></span>
+          Stamp 1G · Available for full-time roles in Ireland · No sponsorship needed
+        </p>
+        <h1 class="hero-title">
+          I build production systems where <span class="accent">AI meets scale.</span>
+        </h1>
+        <p class="hero-sub">
+          I'm <strong>Tejas Pantharapalya Venkatesh</strong>, an AI &amp; Software Engineer at
+          <strong>Intelligenz</strong> in Dublin. I work on multi-tenant RAG pipelines on Azure OpenAI,
+          and before that I spent 3 years at IBM Accelalpha making high-traffic backends fast and dependable.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="mailto:tejaspv1107@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            Get in touch
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/tejas-p-venkatesh" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/Tejas1107" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+            GitHub
+          </a>
         </div>
+        <ul class="hero-meta">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            Dublin 4, Ireland
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+            MSc Computer Science, UCD
+          </li>
+        </ul>
+      </div>
+
+      <!-- Pipeline visual -->
+      <div class="hero-visual" aria-label="A retrieval-augmented generation pipeline: ingest, chunk, embed, retrieve, generate">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <p>rag_pipeline.py</p>
+          </div>
+          <div class="terminal-body">
+            <ol class="pipeline" id="pipeline">
+              <li data-step="0">
+                <span class="step-ico">01</span>
+                <div><b>Ingest</b><small>12,000+ regulatory PDFs · 40 tenants</small></div>
+                <span class="step-state"></span>
+              </li>
+              <li data-step="1">
+                <span class="step-ico">02</span>
+                <div><b>Chunk &amp; extract</b><small>automated document intelligence</small></div>
+                <span class="step-state"></span>
+              </li>
+              <li data-step="2">
+                <span class="step-ico">03</span>
+                <div><b>Embed</b><small>Azure OpenAI · pgvector</small></div>
+                <span class="step-state"></span>
+              </li>
+              <li data-step="3">
+                <span class="step-ico">04</span>
+                <div><b>Hybrid retrieve</b><small>semantic + keyword search</small></div>
+                <span class="step-state"></span>
+              </li>
+              <li data-step="4">
+                <span class="step-ico">05</span>
+                <div><b>Generate &amp; evaluate</b><small>RAGAS · DeepEval</small></div>
+                <span class="step-state"></span>
+              </li>
+            </ol>
+            <div class="terminal-out">
+              <span class="prompt">&gt;</span>
+              <span id="terminal-line">retrieval_hit_rate: 72% → <b>88%</b> over 500+ queries</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Python</span><span>FastAPI</span><span>RAG</span><span>LLMs</span><span>Azure OpenAI</span><span>LangChain</span><span>pgvector</span><span>PostgreSQL</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>GitHub Actions</span><span>TypeScript</span><span>KEDA</span>
+        <span>Python</span><span>FastAPI</span><span>RAG</span><span>LLMs</span><span>Azure OpenAI</span><span>LangChain</span><span>pgvector</span><span>PostgreSQL</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>GitHub Actions</span><span>TypeScript</span><span>KEDA</span>
+      </div>
     </div>
 
-    <!-- Printable Skills Section (Hidden on Screen, Shown in Print) -->
-    <div class="print-skills-section">
-        <h2 class="section-title">Core Skills</h2>
-        <div class="print-skills-category">
-            <strong>Integration & Architecture:</strong> Oracle Integration Cloud (OIC), REST APIs, SOAP APIs, API Design, Middleware Design, FBDI, SIT/UAT, Postman, SOAP UI
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+      <header class="section-head reveal">
+        <p class="eyebrow">01 / About</p>
+        <h2>Comfortable across the AI, backend and cloud stack.</h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a software engineer working across AI, backend development and cloud infrastructure.
+            At <strong>Intelligenz</strong> I build secure, multi-tenant RAG pipelines on Azure OpenAI
+            and automated systems for ingesting documents.
+          </p>
+          <p>
+            Before that I spent <strong>3 years at IBM Accelalpha</strong> building high-volume backend
+            applications. I tuned core database interactions to cut peak-load response times by 55%, and I
+            designed production-grade CI/CD pipelines.
+          </p>
+          <p>
+            I chose this mix on purpose. I enjoy the hard parts of both worlds: designing clean,
+            fast backend architectures, and shipping complex AI features that keep working in production.
+          </p>
         </div>
-        <div class="print-skills-category">
-            <strong>AI & Engineering:</strong> Azure OpenAI, RAG, Azure Cognitive Search, Azure Document Intelligence, TypeScript, React, Express, Prisma, Python, Java, Docker
-        </div>
-        <div class="print-skills-category">
-            <strong>Data & Platforms:</strong> PostgreSQL, SQL, Oracle SQL, MongoDB, Azure Blob Storage, Azure Container Apps, Big Data Concepts
-        </div>
-        <div class="print-skills-category">
-            <strong>Consulting & Delivery:</strong> As-is/to-be Process Analysis, Gap Analysis, Technical Documentation, Stakeholder Engagement, Production Support
-        </div>
-    </div>
-
-    <div class="app-container">
-        <!-- Sidebar Column (Left) -->
-        <aside class="sidebar">
-            
-            <!-- Profile Card -->
-            <div class="glass-panel profile-card">
-                <div class="profile-avatar-container" id="btn-open-customizer" title="Customize Resume">
-                    <div class="profile-avatar">TV</div>
-                    <div class="profile-avatar-overlay">
-                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-                    </div>
-                </div>
-                <div class="status-badge">
-                    <div class="status-dot"></div>
-                    <span>Available for Opportunities</span>
-                </div>
-                <h1 class="profile-name" id="resume-name">Tejas Pantharapalya Venkatesh</h1>
-                <div class="profile-title" id="resume-title">AI Engineer • Integration Specialist • MSc CS Candidate</div>
-                
-                <div class="profile-meta">
-                    <div class="meta-item">
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        <span id="resume-email">tejasvenkatesh1107@gmail.com</span>
-                    </div>
-                    <div class="meta-item">
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        <span id="resume-phone">+353 894693056</span>
-                    </div>
-                    <div class="meta-item">
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        <span id="resume-location">Dublin, Ireland</span>
-                    </div>
-                    <div class="meta-item">
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        <span>Dublin Local (+1 BST)</span>
-                    </div>
-                </div>
-
-                <div class="action-buttons">
-                    <button class="btn btn-primary" id="btn-print">
-                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-                        Open Resume PDF
-                    </button>
-                    <a href="https://www.linkedin.com/in/tejas-pv-657aa9201/" target="_blank" class="btn btn-secondary">
-                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        LinkedIn
-                    </a>
-                </div>
-            </div>
-
-            <!-- Combined Sidebar Dashboard (Impact Metrics, Visa/Work Status, & Credentials Spotlight) -->
-            <div class="glass-panel sidebar-dashboard">
-                <!-- Credentials Spotlight -->
-                <div class="dashboard-section">
-                    <h3 class="widget-title" style="margin-bottom: 0.75rem;">
-                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                        Core Credentials
-                    </h3>
-                    <div class="credential-sidebar-list">
-                        <div class="credential-sidebar-item">
-                            <span class="cred-icon">🤖</span>
-                            <div class="cred-details">
-                                <div class="cred-name">AI Engineer Intern</div>
-                                <div class="cred-issuer">Intelligenz • Dublin</div>
-                            </div>
-                        </div>
-                        <div class="credential-sidebar-item">
-                            <span class="cred-icon">🎖️</span>
-                            <div class="cred-details">
-                                <div class="cred-name">Oracle Integration Specialist</div>
-                                <div class="cred-issuer">Oracle Cloud Infrastructure</div>
-                            </div>
-                        </div>
-                        <div class="credential-sidebar-item">
-                            <span class="cred-icon">🧠</span>
-                            <div class="cred-details">
-                                <div class="cred-name">Oracle Generative AI Certified</div>
-                                <div class="cred-issuer">Oracle Cloud Infrastructure</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Visa / Work Authorization & Availability -->
-                <div class="dashboard-section" style="margin-top: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1.25rem;">
-                    <h3 class="widget-title" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0.75rem;">
-                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
-                        Global Recruitment Status
-                    </h3>
-                    <div class="status-grid">
-                        <div class="status-cell">
-                            <span class="status-label">Authorization</span>
-                            <span class="status-value highlight-cyan">Stamp 2</span>
-                        </div>
-                        <div class="status-cell">
-                            <span class="status-label">Availability</span>
-                            <span class="status-value highlight-emerald">Open to opportunities</span>
-                        </div>
-                        <div class="status-cell">
-                            <span class="status-label">Relocation</span>
-                            <span class="status-value">Ireland / EU</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Impact Metrics Dashboard -->
-                <div class="dashboard-section" style="margin-top: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1.25rem;">
-                    <h3 class="widget-title" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0.75rem;">
-                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                        Professional Impact Metrics
-                    </h3>
-                    <div class="metrics-grid">
-                        <div class="metric-card">
-                            <div class="metric-num">3+ Yrs</div>
-                            <div class="metric-desc">Enterprise Integration Delivery</div>
-                        </div>
-                        <div class="metric-card">
-                            <div class="metric-num">1+ Yr</div>
-                            <div class="metric-desc">Applied AI / LLM Engineering</div>
-                        </div>
-                        <div class="metric-card">
-                            <div class="metric-num">80%+</div>
-                            <div class="metric-desc">Manual Work Reduced</div>
-                        </div>
-                        <div class="metric-card">
-                            <div class="metric-num">20+</div>
-                            <div class="metric-desc">Enterprise APIs / Integrations</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Recruiter Fit Calculator -->
-            <div class="glass-panel">
-                <h3 class="widget-title">
-                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                    Recruiter Fit Calculator
-                </h3>
-                <div class="calculator-presets">
-                    <button class="preset-chip active" data-role="integration">Integration Presets</button>
-                    <button class="preset-chip" data-role="fullstack">Fullstack Presets</button>
-                    <button class="preset-chip" data-role="data">Data / ML Presets</button>
-                    <button class="preset-chip" data-role="custom">Custom Presets</button>
-                </div>
-                <div class="score-display-wrapper">
-                    <div class="gauge-container">
-                        <svg class="gauge-svg" width="60" height="60">
-                            <circle class="gauge-bg" cx="30" cy="30" r="26"></circle>
-                            <circle class="gauge-bar" id="calc-gauge" cx="30" cy="30" r="26" stroke-dasharray="163.36" stroke-dashoffset="163.36"></circle>
-                        </svg>
-                        <div class="gauge-text" id="calc-score">0%</div>
-                    </div>
-                    <div class="score-text-block">
-                        <div class="score-rating" id="calc-rating">Potential Match</div>
-                        <div class="score-desc" id="calc-desc">Select tech stacks to view alignment score.</div>
-                    </div>
-                </div>
-                
-                <div class="target-skills-list" id="calc-skills-container">
-                    <!-- Loaded dynamically via JS -->
-                </div>
-
-                <div class="fast-outreach-form">
-                    <div class="input-group">
-                        <label class="input-label" for="outreach-company">Company Name</label>
-                        <input type="text" id="outreach-company" class="text-input" placeholder="Google, Accelalpha...">
-                    </div>
-                    <div class="input-group">
-                        <label class="input-label" for="outreach-recruiter">Your Name</label>
-                        <input type="text" id="outreach-recruiter" class="text-input" placeholder="Recruiter Name...">
-                    </div>
-                    <div class="input-group" style="margin-top: 0.5rem;">
-                        <label class="input-label">Tailored Pitch Preview</label>
-                        <div class="pitch-email-preview" id="pitch-preview">Hi Tejas...</div>
-                    </div>
-                    <button class="btn btn-primary" id="btn-copy-pitch" style="width: 100%; margin-top: 0.75rem;">
-                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                        Copy Tailored Pitch
-                    </button>
-                </div>
-            </div>
-
-            <!-- Recruiter Speed Dial -->
-            <div class="glass-panel">
-                <h3 class="widget-title">
-                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    Recruiter Speed Dial
-                </h3>
-                <form class="speed-dial-form" id="speed-dial-form">
-                    <div class="input-group">
-                        <label class="input-label" for="dial-date">Suggested Date / Week</label>
-                        <input type="text" id="dial-date" class="text-input" placeholder="e.g. Next Tuesday 2 PM...">
-                    </div>
-                    <div class="input-group">
-                        <label class="input-label" for="dial-category">Interview Focus</label>
-                        <select id="dial-category" class="text-input" style="background: var(--bg-input);">
-                            <option value="Integration Specialist">Integration Specialist</option>
-                            <option value="Fullstack / Backend Developer">Fullstack / Backend Developer</option>
-                            <option value="Data / ML Engineer">Data / ML Engineer</option>
-                            <option value="General Technical Interview">General Technical Interview</option>
-                        </select>
-                    </div>
-                    <div class="input-group">
-                        <label class="input-label" for="dial-proposal">Proposal Details / Custom Notes</label>
-                        <textarea id="dial-proposal" class="text-input textarea-input" placeholder="e.g. 30 min chat regarding Oracle Integration specialist role..."></textarea>
-                    </div>
-                    <button class="btn btn-primary" id="btn-speed-dial">
-                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-                        Send Proposal / Open Email
-                    </button>
-                </form>
-            </div>
-
+        <aside class="about-card reveal" aria-label="Work eligibility">
+          <h3>Work eligibility</h3>
+          <dl>
+            <div><dt>Permission</dt><dd class="good">Stamp 1G</dd></div>
+            <div><dt>Sponsorship</dt><dd>Not required</dd></div>
+            <div><dt>Availability</dt><dd class="good">Full-time, now</dd></div>
+            <div><dt>Location</dt><dd>Ireland · Remote</dd></div>
+          </dl>
+          <p class="about-roles">
+            Open to <span>Software Engineer</span>, <span>AI Backend</span>,
+            <span>Cloud / DevOps</span> and <span>SRE</span> roles.
+          </p>
         </aside>
+      </div>
+    </section>
 
+    <!-- IMPACT -->
+    <section class="section container" id="impact">
+      <header class="section-head reveal">
+        <p class="eyebrow">02 / Impact</p>
+        <h2>Results I've shipped, with numbers.</h2>
+      </header>
+      <div class="metrics">
+        <article class="metric reveal">
+          <p class="metric-num"><span data-count="55">0</span>%</p>
+          <p class="metric-label">faster peak-load response times, from removing N+1 queries and adding custom PostgreSQL indexes</p>
+        </article>
+        <article class="metric reveal">
+          <p class="metric-num"><span data-count="12000" data-format="k">0</span>+</p>
+          <p class="metric-label">regulatory PDFs processed automatically across 40 separate tenants</p>
+        </article>
+        <article class="metric reveal">
+          <p class="metric-num"><span class="metric-from">72%→</span><span data-count="88">0</span>%</p>
+          <p class="metric-label">retrieval efficiency, measured over 500+ evaluation queries, after switching to hybrid semantic + keyword search</p>
+        </article>
+        <article class="metric reveal">
+          <p class="metric-num"><span data-count="80">0</span>%</p>
+          <p class="metric-label">less manual document processing, thanks to automated extraction pipelines</p>
+        </article>
+        <article class="metric reveal">
+          <p class="metric-num"><span data-count="99.9" data-decimals="1">0</span>%</p>
+          <p class="metric-label">availability for core enterprise features, with document retrieval under 2 seconds</p>
+        </article>
+        <article class="metric reveal">
+          <p class="metric-num"><span data-count="30">0</span>%</p>
+          <p class="metric-label">faster code-to-production for multi-tenant updates, from containerised services and automation</p>
+        </article>
+      </div>
+    </section>
 
+    <!-- EXPERIENCE -->
+    <section class="section container" id="experience">
+      <header class="section-head reveal">
+        <p class="eyebrow">03 / Experience</p>
+        <h2>Where I've worked.</h2>
+      </header>
 
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job-when">
+            <span>Jul 2026 to Present</span>
+            <span class="job-where">Dublin, Ireland</span>
+          </div>
+          <div class="job-card">
+            <header>
+              <h3>AI &amp; Software Engineer</h3>
+              <p class="job-org">Intelligenz <span class="tag-now">Current</span></p>
+            </header>
+            <ul>
+              <li>Cut manual document processing effort by <b>80%</b> with automated extraction pipelines that ingest and chunk <b>12,000+</b> regulatory documents across <b>40 tenants</b>.</li>
+              <li>Kept core enterprise platform features at <b>99.9% availability</b> by building backend integrations with secure document retrieval in <b>under 2 seconds</b>.</li>
+              <li>Hit <b>100% on-time releases</b> by writing infrastructure-as-code that provisions and mirrors compliance-validated development and validation environments.</li>
+              <li>Made code-to-production deployment <b>30% faster</b> by containerising application services and automating multi-tenant update workflows.</li>
+            </ul>
+            <p class="job-stack"><span>Azure OpenAI</span><span>RAG</span><span>Python</span><span>Terraform</span><span>Docker</span><span>Azure Container Apps</span></p>
+          </div>
+        </li>
 
+        <li class="job reveal">
+          <div class="job-when">
+            <span>Apr 2024 to Jul 2025</span>
+            <span class="job-where">India</span>
+          </div>
+          <div class="job-card">
+            <header>
+              <h3>Software Engineer</h3>
+              <p class="job-org">IBM Accelalpha</p>
+            </header>
+            <ul>
+              <li>Cut peak-load response times on high-traffic endpoints by <b>55%</b> by removing redundant database queries and adding composite indexes on frequently queried foreign keys.</li>
+              <li>Delivered <b>zero-downtime releases</b> across cloud environments with production-grade pipelines covering automated testing, image builds and multi-region deployments.</li>
+              <li>Made incident detection and root-cause analysis much faster by adding observability, structured logging and strict schema validation layers.</li>
+              <li>Helped systems scale securely across environments by managing infrastructure as code for isolated databases and central credential management.</li>
+            </ul>
+            <p class="job-stack"><span>PostgreSQL</span><span>CI/CD</span><span>Structured logging</span><span>IaC</span><span>Multi-region</span></p>
+          </div>
+        </li>
 
-        <!-- Main Content Column (Right) -->
-        <main class="main-content">
-            
-            <!-- Bio Section -->
-            <section class="glass-panel section-card">
-                <div class="section-title">
-                    <div class="section-icon">
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    </div>
-                    About Tejas
-                </div>
-                <p class="bio-paragraph" id="resume-bio">
-                    Integration specialist with 3+ years of experience delivering enterprise solutions across Oracle Cloud, now expanding into applied AI engineering through RAG systems, Azure OpenAI integrations, and document intelligence workflows for a regulatory-compliance platform. I combine enterprise architecture depth with hands-on experience building full-stack AI features and validation-ready software.
-                </p>
-                <div class="highlight-pills">
-                    <span class="highlight-pill">AI Engineering</span>
-                    <span class="highlight-pill">Enterprise Integration</span>
-                    <span class="highlight-pill">MSc Computer Science</span>
-                </div>
-            </section>
+        <li class="job reveal">
+          <div class="job-when">
+            <span>Jul 2022 to Apr 2024</span>
+            <span class="job-where">India</span>
+          </div>
+          <div class="job-card">
+            <header>
+              <h3>Junior Software Engineer</h3>
+              <p class="job-org">IBM Accelalpha</p>
+            </header>
+            <ul>
+              <li>Got features to market <b>25% faster</b> by building and maintaining <b>20+ core backend endpoints</b> with modular, reusable logic and validation layers.</li>
+              <li>Sped up relational database interactions and query execution by refactoring complex raw queries and tuning database schemas.</li>
+              <li>Removed manual deployment work for the local development team by standardising setup scripts and enforcing automated branch-protection triggers.</li>
+            </ul>
+            <p class="job-stack"><span>REST APIs</span><span>SQL</span><span>Schema design</span><span>Git workflows</span></p>
+          </div>
+        </li>
 
-            <!-- Skill Core Matrix Section -->
-            <section class="glass-panel section-card skills-section-container">
-                <div class="section-title">
-                    <div class="section-icon">
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-                    </div>
-                    Skill Core Matrix
-                </div>
-                <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
-                    Click on any skill to instantly highlight corresponding projects and experience milestones!
-                </p>
-                
-                <div class="matrix-filters">
-                    <button class="matrix-filter-btn active" data-filter="all">All Skills</button>
-                    <button class="matrix-filter-btn" data-filter="dev">Development & Engineering</button>
-                    <button class="matrix-filter-btn" data-filter="integration">Integration & Architecture</button>
-                    <button class="matrix-filter-btn" data-filter="database">Databases & Tools</button>
-                    <button class="matrix-filter-btn" data-filter="consulting">Consulting & Soft Skills</button>
-                </div>
+        <li class="job reveal">
+          <div class="job-when">
+            <span>Aug 2021 to Sep 2021</span>
+            <span class="job-where">Bangalore, India</span>
+          </div>
+          <div class="job-card">
+            <header>
+              <h3>Machine Learning Intern</h3>
+              <p class="job-org">Quant Masters Technologies</p>
+            </header>
+            <ul>
+              <li>Built a prototype visual recommendation system in Python and PyTorch. A pre-trained ResNet-50 CNN extracted features from user-uploaded images for low-latency similarity matching.</li>
+              <li>Processed and cleaned <b>50 GB+</b> of image metadata and user interaction logs with pandas and SQL to build training and evaluation datasets.</li>
+              <li>Containerised the inference pipeline with Docker and deployed it as a microservice on AWS EC2, so it could be A/B tested safely in production.</li>
+            </ul>
+            <p class="job-stack"><span>PyTorch</span><span>ResNet-50</span><span>pandas</span><span>Docker</span><span>AWS EC2</span></p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-                <div class="skill-search-wrapper">
-                    <svg class="skill-search-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                    <input type="text" id="skill-search" class="text-input skill-search-input" placeholder="Search skills (e.g. FastAPI)...">
-                </div>
+    <!-- SKILLS -->
+    <section class="section container" id="skills">
+      <header class="section-head reveal">
+        <p class="eyebrow">04 / Skills</p>
+        <h2>What I work with.</h2>
+      </header>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/></svg>
+          </div>
+          <h3>AI &amp; Data Engineering</h3>
+          <ul class="chips">
+            <li>Production RAG</li><li>LLMs</li><li>Embeddings</li><li>Prompt Engineering</li><li>RAGAS</li><li>DeepEval</li><li>Azure OpenAI</li><li>LangChain</li><li>pgvector</li><li>ChromaDB</li><li>PyTorch</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg>
+          </div>
+          <h3>Backend</h3>
+          <ul class="chips">
+            <li>Python</li><li>FastAPI</li><li>Express.js</li><li>TypeScript</li><li>PostgreSQL</li><li>MySQL</li><li>Async programming</li><li>REST APIs</li><li>Systems Design</li><li>Connectors</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 9a4.5 4.5 0 0 1-1 9z"/></svg>
+          </div>
+          <h3>Cloud &amp; Infrastructure</h3>
+          <ul class="chips">
+            <li>Azure Container Apps</li><li>Service Bus</li><li>Blob Storage</li><li>AI Search</li><li>AWS</li><li>Terraform</li><li>Oracle Cloud</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+          </div>
+          <h3>DevOps &amp; Observability</h3>
+          <ul class="chips">
+            <li>Docker</li><li>Kubernetes</li><li>GitHub Actions</li><li>CI/CD</li><li>KEDA</li><li>Structured logging</li><li>Logging</li><li>Schema validation</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-                <div class="skills-grid" id="skills-matrix-grid">
-                    <!-- Loaded dynamically via JS -->
-                </div>
-            </section>
+    <!-- EDUCATION + CERTS -->
+    <section class="section container" id="education">
+      <header class="section-head reveal">
+        <p class="eyebrow">05 / Education &amp; Certifications</p>
+        <h2>Education and certifications.</h2>
+      </header>
+      <div class="edu-grid">
+        <article class="edu-card reveal">
+          <p class="edu-when">Sep 2025 to Aug 2026</p>
+          <h3>MSc Computer Science</h3>
+          <p class="edu-org">University College Dublin</p>
+          <p class="edu-badge">GPA 3.67</p>
+        </article>
+        <article class="edu-card reveal">
+          <p class="edu-when">2018 to 2022</p>
+          <h3>BE Computer Science</h3>
+          <p class="edu-org">Bangalore Institute of Technology</p>
+        </article>
+        <article class="edu-card cert reveal">
+          <p class="edu-when">Oracle · 2024</p>
+          <h3>OCI Generative AI Certified Professional</h3>
+          <p class="edu-org">Oracle Cloud Infrastructure</p>
+        </article>
+        <article class="edu-card cert reveal">
+          <p class="edu-when">Oracle · 2023</p>
+          <h3>OCI Certified Application Integration Professional</h3>
+          <p class="edu-org">Oracle Cloud Infrastructure</p>
+        </article>
+      </div>
+    </section>
 
-            <!-- Experience Timeline Section -->
-            <section class="glass-panel section-card">
-                <div class="section-title">
-                    <div class="section-icon">
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                    </div>
-                    Professional Trajectory
-                </div>
-                
-                <div class="timeline">
-                    <!-- Milestone 1 -->
-                    <div class="experience-milestone" data-skills="Azure OpenAI,RAG,Azure Cognitive Search,Azure Document Intelligence,React,TypeScript,Express,Prisma,PostgreSQL,Prompt Engineering">
-                        <div class="timeline-node"></div>
-                        <div class="milestone-header">
-                            <div class="milestone-title-block">
-                                <span class="milestone-role">AI Engineer – Intern</span>
-                                <span class="milestone-company-line">Intelligenz — Dublin, Ireland</span>
-                            </div>
-                            <div class="milestone-meta-right">
-                                <span class="milestone-date">July 2026 – Present</span>
-                                <div class="milestone-location">Hybrid</div>
-                            </div>
-                        </div>
-                        <ul class="milestone-bullets">
-                            <li>Built RAG-powered chat experiences using Azure OpenAI and Azure Cognitive Search to deliver context-aware, document-grounded Q&A in a multi-tenant SaaS platform.</li>
-                            <li>Developed an AI-driven content generation engine that populates regulatory review documents from indexed quality and compliance material with quota-aware token management.</li>
-                            <li>Integrated Azure Document Intelligence and per-tenant vector indexing to support scalable document processing and information retrieval workflows.</li>
-                            <li>Worked across a TypeScript full stack with React/Vite, Express, Prisma, and PostgreSQL while contributing validation documentation for CSV, URS, FDS, IQ, OQ, and PQ activities.</li>
-                        </ul>
-                        <div class="milestone-skills">
-                            <span class="skill-badge" data-skill-ref="Azure OpenAI">Azure OpenAI</span>
-                            <span class="skill-badge" data-skill-ref="RAG">RAG</span>
-                            <span class="skill-badge" data-skill-ref="Azure Cognitive Search">Azure Cognitive Search</span>
-                            <span class="skill-badge" data-skill-ref="Azure Document Intelligence">Azure Document Intelligence</span>
-                            <span class="skill-badge" data-skill-ref="React">React</span>
-                            <span class="skill-badge" data-skill-ref="TypeScript">TypeScript</span>
-                            <span class="skill-badge" data-skill-ref="Prompt Engineering">Prompt Engineering</span>
-                        </div>
-                    </div>
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">06 / Contact</p>
+        <h2>Building something ambitious?</h2>
+        <p>
+          If you need an engineer who's comfortable across the AI, backend and cloud stack, I'd love to hear from you.
+          I can start full-time in Ireland right away, with no sponsorship required.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary btn-lg" href="mailto:tejaspv1107@gmail.com">tejaspv1107@gmail.com</a>
+          <button class="btn btn-ghost btn-lg" type="button" id="copy-email" data-email="tejaspv1107@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            <span>Copy email</span>
+          </button>
+        </div>
+        <ul class="contact-links">
+          <li><a href="https://www.linkedin.com/in/tejas-p-venkatesh" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/Tejas1107" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><span>Dublin, Ireland</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-                    <!-- Milestone 2 -->
-                    <div class="experience-milestone" data-skills="OIC,FBDI,REST APIs,SOAP APIs,SIT/UAT,Error Hospital">
-                        <div class="timeline-node"></div>
-                        <div class="milestone-header">
-                            <div class="milestone-title-block">
-                                <span class="milestone-role">Associate Consultant – Oracle Cloud Integration Specialist</span>
-                                <span class="milestone-company-line">Accelalpha — Bangalore, India</span>
-                            </div>
-                            <div class="milestone-meta-right">
-                                <span class="milestone-date">July 2022 – April 2024</span>
-                                <div class="milestone-location">Onsite</div>
-                            </div>
-                        </div>
-                        <ul class="milestone-bullets">
-                            <li>Delivered systems integration across Oracle Cloud and on-premise platforms, designing interfaces for cross-functional data flow.</li>
-                            <li>Implemented FBDI-based integrations for master data entities (Customer, Item, Contact), covering mapping, validation and reconciliation.</li>
-                            <li>Designed and implemented REST/SOAP API interfaces, reviewed API documentation and tested endpoints across SIT and UAT environments.</li>
-                            <li>Performed gap analysis on integration configurations, assessed business impact of proposed changes, and recommended practical solutions.</li>
-                            <li>Supported go-live, migration and production operations, investigating incidents and resolving cross-system defects.</li>
-                        </ul>
-                        <div class="milestone-skills">
-                            <span class="skill-badge" data-skill-ref="OIC">Oracle Integration Cloud (OIC)</span>
-                            <span class="skill-badge" data-skill-ref="FBDI">FBDI</span>
-                            <span class="skill-badge" data-skill-ref="REST APIs">REST</span>
-                            <span class="skill-badge" data-skill-ref="SOAP APIs">SOAP</span>
-                            <span class="skill-badge" data-skill-ref="SIT/UAT">SIT/UAT</span>
-                            <span class="skill-badge" data-skill-ref="Error Hospital">Error hospital</span>
-                        </div>
-                    </div>
-
-                    <!-- Milestone 3 -->
-                    <div class="experience-milestone" data-skills="Python,SQL,Databases">
-                        <div class="timeline-node"></div>
-                        <div class="milestone-header">
-                            <div class="milestone-title-block">
-                                <span class="milestone-role">Machine Learning Intern</span>
-                                <span class="milestone-company-line">Quant Masters Private Ltd. — Bangalore, India</span>
-                            </div>
-                            <div class="milestone-meta-right">
-                                <span class="milestone-date">July 2021 – September 2021</span>
-                                <div class="milestone-location">Onsite</div>
-                            </div>
-                        </div>
-                        <ul class="milestone-bullets">
-                            <li>Worked on Real-time data sets to implement machine learning algorithms.</li>
-                            <li>Developed a weather predictor system using the Australian dataset from 2020 to 2021 to predict the weather the following year with an accuracy of 89%.</li>
-                            <li>Got exposed to various machine learning algorithms and modules.</li>
-                        </ul>
-                        <div class="milestone-skills">
-                            <span class="skill-badge" data-skill-ref="Python">Python</span>
-                            <span class="skill-badge" data-skill-ref="SQL">SQL</span>
-                            <span class="skill-badge" data-skill-ref="Databases">Databases</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects & Architectural Specs -->
-            <section class="glass-panel section-card">
-                <div class="section-title">
-                    <div class="section-icon">
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-                    </div>
-                    System Portfolios & Architectural Specs
-                </div>
-                
-                <div class="portfolio-filters">
-                    <button class="matrix-filter-btn active" data-proj-filter="all">All Projects</button>
-                    <button class="matrix-filter-btn" data-proj-filter="integration">Integration</button>
-                    <button class="matrix-filter-btn" data-proj-filter="database">Database</button>
-                    <button class="matrix-filter-btn" data-proj-filter="ml">ML/AI</button>
-                    <button class="matrix-filter-btn" data-proj-filter="fullstack">Fullstack</button>
-                </div>
-
-                <div class="portfolio-grid">
-                    
-                    <!-- Project 1: Anti-Cheat Exam Portal -->
-                    <div class="project-card" data-proj-cat="ai,fullstack" data-skills="React,TypeScript,Express,Prisma,PostgreSQL,Azure OpenAI,Azure Cognitive Search,Azure Document Intelligence,RAG,Prompt Engineering">
-                        <div class="project-header">
-                            <div class="project-title-group">
-                                <h4 class="project-title">Regulatory Compliance Copilot</h4>
-                                <span class="project-sub">AI-assisted document intelligence platform</span>
-                            </div>
-                            <span class="project-category-badge">AI & Fullstack</span>
-                        </div>
-                        <ul class="project-bullets">
-                            <li>Created RAG-based Q&amp;A and content generation features that ground responses in regulated-quality documents using Azure OpenAI and Azure Cognitive Search.</li>
-                            <li>Built OCR-driven ingestion workflows with Azure Document Intelligence and tenant-aware indexing to support scalable review operations.</li>
-                            <li>Delivered a TypeScript-based full-stack experience with React/Vite, Express, Prisma, and PostgreSQL for an enterprise compliance workflow.</li>
-                            <li>Contributed validation artifacts for CSV and regulatory documentation, helping bridge engineering delivery with audit-ready implementation.</li>
-                        </ul>
-                        <div class="project-footer">
-                            <div class="project-tags">
-                                <span class="skill-badge" data-skill-ref="React">React</span>
-                                <span class="skill-badge" data-skill-ref="TypeScript">TypeScript</span>
-                                <span class="skill-badge" data-skill-ref="Express">Express</span>
-                                <span class="skill-badge" data-skill-ref="Prisma">Prisma</span>
-                                <span class="skill-badge" data-skill-ref="PostgreSQL">PostgreSQL</span>
-                                <span class="skill-badge" data-skill-ref="Azure OpenAI">Azure OpenAI</span>
-                                <span class="skill-badge" data-skill-ref="Azure Cognitive Search">Azure Cognitive Search</span>
-                                <span class="skill-badge" data-skill-ref="Azure Document Intelligence">Azure Document Intelligence</span>
-                                <span class="skill-badge" data-skill-ref="RAG">RAG</span>
-                                <span class="skill-badge" data-skill-ref="Prompt Engineering">Prompt Engineering</span>
-                            </div>
-                            <button class="topology-toggle-btn" data-target="topology-anticheat">
-                                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"><polyline points="6 9 12 15 18 9"/></svg>
-                                Show System Topology Outline
-                            </button>
-                        </div>
-                        <!-- Topology Panel -->
-                        <div class="project-topology-panel" id="topology-anticheat">
-                            <div class="topology-container">
-                                <div class="topology-flow">
-                                    <div class="topology-node client">
-                                        <div class="topology-node-title">Compliance UI</div>
-                                        <div class="topology-node-tech">React / Vite</div>
-                                    </div>
-                                    <div class="topology-connector">
-                                        <div class="connector-label">Secure API</div>
-                                    </div>
-                                    <div class="topology-node">
-                                        <div class="topology-node-title">AI Gateway</div>
-                                        <div class="topology-node-tech">Express / Prisma</div>
-                                    </div>
-                                    <div class="topology-connector">
-                                        <div class="connector-label">Search + OCR</div>
-                                    </div>
-                                    <div class="topology-node broker">
-                                        <div class="topology-node-title">Azure AI Services</div>
-                                        <div class="topology-node-tech">OpenAI / Cognitive Search</div>
-                                    </div>
-                                    <div class="topology-connector">
-                                        <div class="connector-label">Indexed Knowledge</div>
-                                    </div>
-                                    <div class="topology-node database">
-                                        <div class="topology-node-title">Tenant Data</div>
-                                        <div class="topology-node-tech">PostgreSQL + Docs</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2: Anti-Cheat Exam Portal (Added to current portfolio) -->
-                    <div class="project-card" data-proj-cat="ml,fullstack" data-skills="React,TypeScript,FastAPI,Azure Service Bus,PostgreSQL,Azure Blob Storage,OpenTelemetry,Signal Scorer,Postman">
-                        <div class="project-header">
-                            <div class="project-title-group">
-                                <h4 class="project-title">Anti-Cheat Exam Portal</h4>
-                                <span class="project-sub">Academic Capstone (Microsoft-affiliated)</span>
-                            </div>
-                            <span class="project-category-badge">ML & Fullstack</span>
-                        </div>
-                        <ul class="project-bullets">
-                            <li>Designed an academic integrity platform combining a React/TypeScript exam interface with a real-time telemetry SDK tracking tab focus, keystrokes, paste events, and clipboard activity.</li>
-                            <li>Designed a middleware pipeline using FastAPI, Azure Service Bus, and OpenTelemetry for suspicious activity scoring.</li>
-                            <li>Designed a telemetry detection module using OpenTelemetry and a signal scorer to flag and score answers inconsistent with prior student writing.</li>
-                            <li>Designed a PostgreSQL and Azure Blob Storage backend for session data, audit logs, and professor-facing analytics reporting.</li>
-                        </ul>
-                        <div class="project-footer">
-                            <div class="project-tags">
-                                <span class="skill-badge" data-skill-ref="React">React</span>
-                                <span class="skill-badge" data-skill-ref="TypeScript">TypeScript</span>
-                                <span class="skill-badge" data-skill-ref="FastAPI">FastAPI</span>
-                                <span class="skill-badge" data-skill-ref="Azure Service Bus">Azure Service Bus</span>
-                                <span class="skill-badge" data-skill-ref="PostgreSQL">PostgreSQL</span>
-                                <span class="skill-badge" data-skill-ref="Azure Blob Storage">Azure Blob Storage</span>
-                                <span class="skill-badge" data-skill-ref="OpenTelemetry">OpenTelemetry</span>
-                                <span class="skill-badge" data-skill-ref="Signal Scorer">Signal Scorer</span>
-                            </div>
-                            <button class="topology-toggle-btn" data-target="topology-anticheat-added">
-                                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"><polyline points="6 9 12 15 18 9"/></svg>
-                                Show System Topology Outline
-                            </button>
-                        </div>
-                        <div class="project-topology-panel" id="topology-anticheat-added">
-                            <div class="topology-container">
-                                <div class="topology-flow">
-                                    <div class="topology-node client">
-                                        <div class="topology-node-title">Telemetry UI</div>
-                                        <div class="topology-node-tech">React / TS SDK</div>
-                                    </div>
-                                    <div class="topology-connector">
-                                        <div class="connector-label">Secure HTTP</div>
-                                    </div>
-                                    <div class="topology-node">
-                                        <div class="topology-node-title">Gateway API</div>
-                                        <div class="topology-node-tech">FastAPI / Azure Bus</div>
-                                    </div>
-                                    <div class="topology-connector">
-                                        <div class="connector-label">Signal Scoring</div>
-                                    </div>
-                                    <div class="topology-node broker">
-                                        <div class="topology-node-title">Telemetry Pipeline</div>
-                                        <div class="topology-node-tech">OpenTelemetry</div>
-                                    </div>
-                                    <div class="topology-connector">
-                                        <div class="connector-label">Audit Persist</div>
-                                    </div>
-                                    <div class="topology-node database">
-                                        <div class="topology-node-title">Storage Tier</div>
-                                        <div class="topology-node-tech">PostgreSQL & Blob</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3: Cloud Library Microservices -->
-                    <div class="project-card" data-proj-cat="fullstack,integration" data-skills="Python,Flask,PostgreSQL,SQLAlchemy,RabbitMQ,Docker,Docker Compose,Kubernetes">
-                        <div class="project-header">
-                            <div class="project-title-group">
-                                <h4 class="project-title">Cloud Library Microservices</h4>
-                                <span class="project-sub">Microservices-based Library Management</span>
-                            </div>
-                            <span class="project-category-badge">Fullstack & Integration</span>
-                        </div>
-                        <ul class="project-bullets">
-                            <li>Designed and built a microservices-based library management system using Python, Flask, PostgreSQL, and SQLAlchemy ORM.</li>
-                            <li>Implemented event-driven architecture with RabbitMQ for asynchronous inter-service messaging between User, Book, and Borrow services.</li>
-                            <li>Containerized services using Docker and Docker Compose; deployed and orchestrated via Kubernetes (using Kompose conversion).</li>
-                            <li>Enforced business rules (borrowing limits) through asynchronous message consumption, improving service decoupling and fault tolerance.</li>
-                        </ul>
-                        <div class="project-footer">
-                            <div class="project-tags">
-                                <span class="skill-badge" data-skill-ref="Python">Python</span>
-                                <span class="skill-badge" data-skill-ref="Flask">Flask</span>
-                                <span class="skill-badge" data-skill-ref="PostgreSQL">PostgreSQL</span>
-                                <span class="skill-badge" data-skill-ref="SQLAlchemy">SQLAlchemy</span>
-                                <span class="skill-badge" data-skill-ref="RabbitMQ">RabbitMQ</span>
-                                <span class="skill-badge" data-skill-ref="Docker">Docker</span>
-                                <span class="skill-badge" data-skill-ref="Docker Compose">Docker Compose</span>
-                                <span class="skill-badge" data-skill-ref="Kubernetes">Kubernetes</span>
-                            </div>
-                            <button class="topology-toggle-btn" data-target="topology-library">
-                                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"><polyline points="6 9 12 15 18 9"/></svg>
-                                Show System Topology Outline
-                            </button>
-                        </div>
-                        <!-- Topology Panel -->
-                        <div class="project-topology-panel" id="topology-library">
-                            <div class="topology-container">
-                                <div class="topology-flow">
-                                    <div class="topology-node client">
-                                        <div class="topology-node-title">User Service</div>
-                                        <div class="topology-node-tech">Flask / K8s Pod</div>
-                                    </div>
-                                    <div class="topology-connector">
-                                        <div class="connector-label">Event Pub</div>
-                                    </div>
-                                    <div class="topology-node broker">
-                                        <div class="topology-node-title">RabbitMQ</div>
-                                        <div class="topology-node-tech">Msg Broker</div>
-                                    </div>
-                                    <div class="topology-connector">
-                                        <div class="connector-label">Event Sub</div>
-                                    </div>
-                                    <div class="topology-node">
-                                        <div class="topology-node-title">Borrow Service</div>
-                                        <div class="topology-node-tech">Flask Consumer</div>
-                                    </div>
-                                    <div class="topology-connector">
-                                        <div class="connector-label">ORM Sync</div>
-                                    </div>
-                                    <div class="topology-node database">
-                                        <div class="topology-node-title">Library DB</div>
-                                        <div class="topology-node-tech">PostgreSQL Pod</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3: CritiVerse -->
-                    <div class="project-card" data-proj-cat="database" data-skills="PostgreSQL,SQL,Databases">
-                        <div class="project-header">
-                            <div class="project-title-group">
-                                <h4 class="project-title">CritiVerse</h4>
-                                <span class="project-sub">Relational Database for Review Aggregation</span>
-                            </div>
-                            <span class="project-category-badge">Database Design</span>
-                        </div>
-                        <ul class="project-bullets">
-                            <li>Designed a normalized PostgreSQL database modeling 12+ entities (Critics, Publications, Reviews, RatingScales, Sentiment Classifications) for cross-platform review aggregation.</li>
-                            <li>Created Chen-notation ER diagrams covering Media, Critic, and Review clusters with 1:N and M:N relationships.</li>
-                            <li>Developed stored procedures and triggers to automate score normalization (0–100 scale) and sentiment classification on data entry.</li>
-                            <li>Built analytical views/queries to compute critic influence scores and audience-vs-critic divergence metrics.</li>
-                        </ul>
-                        <div class="project-footer">
-                            <div class="project-tags">
-                                <span class="skill-badge" data-skill-ref="PostgreSQL">PostgreSQL</span>
-                                <span class="skill-badge" data-skill-ref="SQL">SQL</span>
-                                <span class="skill-badge" data-skill-ref="Databases">Databases</span>
-                            </div>
-                            <button class="topology-toggle-btn" data-target="topology-critiverse">
-                                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"><polyline points="6 9 12 15 18 9"/></svg>
-                                Show System Topology Outline
-                            </button>
-                        </div>
-                        <!-- Topology Panel -->
-                        <div class="project-topology-panel" id="topology-critiverse">
-                            <div class="topology-container">
-                                <div class="topology-flow" style="justify-content: center; gap: 40px;">
-                                    <div class="topology-node client">
-                                        <div class="topology-node-title">Raw Data Input</div>
-                                        <div class="topology-node-tech">Critic Review JSONs</div>
-                                    </div>
-                                    <div class="topology-connector" style="flex-grow:0; min-width: 80px;">
-                                        <div class="connector-label">SQL Insert Trigger</div>
-                                    </div>
-                                    <div class="topology-node database">
-                                        <div class="topology-node-title">Stored Procedures</div>
-                                        <div class="topology-node-tech">PL/pgSQL Normalize</div>
-                                    </div>
-                                    <div class="topology-connector" style="flex-grow:0; min-width: 80px;">
-                                        <div class="connector-label">Normalized Write</div>
-                                    </div>
-                                    <div class="topology-node database">
-                                        <div class="topology-node-title">Normalized DB</div>
-                                        <div class="topology-node-tech">PostgreSQL (3NF)</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4: API Integration & Testing Project -->
-                    <div class="project-card" data-proj-cat="integration" data-skills="OIC,Postman,SOAP UI,REST APIs,SOAP APIs,Integration Testing & Validation">
-                        <div class="project-header">
-                            <div class="project-title-group">
-                                <h4 class="project-title">API Integration & Testing Project</h4>
-                                <span class="project-sub">Oracle Integration Cloud, Postman</span>
-                            </div>
-                            <span class="project-category-badge">Testing & API Spec</span>
-                        </div>
-                        <ul class="project-bullets">
-                            <li>Designed and tested 20+ API workflows, ensuring reliable data exchange across integrated systems.</li>
-                            <li>Identified and resolved 90% of critical integration issues during testing phases before production deployment.</li>
-                            <li>Improved data validation accuracy by reducing system inconsistencies and failures.</li>
-                            <li>Reduced integration failure rates by 35% through structured testing and edge case handling.</li>
-                        </ul>
-                        <div class="project-footer">
-                            <div class="project-tags">
-                                <span class="skill-badge" data-skill-ref="OIC">Oracle Integration Cloud (OIC)</span>
-                                <span class="skill-badge" data-skill-ref="Postman">Postman</span>
-                                <span class="skill-badge" data-skill-ref="SOAP UI">SOAP UI</span>
-                                <span class="skill-badge" data-skill-ref="REST APIs">REST</span>
-                                <span class="skill-badge" data-skill-ref="SOAP APIs">SOAP</span>
-                                <span class="skill-badge" data-skill-ref="Integration Testing & Validation">Integration Testing & Validation</span>
-                            </div>
-                            <button class="topology-toggle-btn" data-target="topology-api-test">
-                                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"><polyline points="6 9 12 15 18 9"/></svg>
-                                Show System Topology Outline
-                            </button>
-                        </div>
-                        <!-- Topology Panel -->
-                        <div class="project-topology-panel" id="topology-api-test">
-                            <div class="topology-container">
-                                <div class="topology-flow">
-                                    <div class="topology-node client">
-                                        <div class="topology-node-title">Postman / SOAP UI</div>
-                                        <div class="topology-node-tech">Test Client suites</div>
-                                    </div>
-                                    <div class="topology-connector">
-                                        <div class="connector-label">UAT / SIT Requests</div>
-                                    </div>
-                                    <div class="topology-node">
-                                        <div class="topology-node-title">Oracle OIC Gateway</div>
-                                        <div class="topology-node-tech">API Gateways / Maps</div>
-                                    </div>
-                                    <div class="topology-connector">
-                                        <div class="connector-label">Decoupled Routing</div>
-                                    </div>
-                                    <div class="topology-node database">
-                                        <div class="topology-node-title">Enterprise Systems</div>
-                                        <div class="topology-node-tech">HCM & ERP SaaS</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Grid Layout for academic credentials and extra details -->
-            <div class="grid-2">
-                
-                <!-- Education Card -->
-                <div class="glass-panel section-card">
-                    <div class="section-title">
-                        <div class="section-icon">
-                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
-                        </div>
-                        Education
-                    </div>
-                    
-                    <div class="edu-card">
-                        <div class="edu-header">
-                            <div class="edu-title">MSc Computer Science (Negotiated Learning)</div>
-                            <span class="edu-date">Sept 2025 – Aug 2026</span>
-                        </div>
-                        <div class="edu-school" style="margin-bottom: 0.35rem;">University College Dublin</div>
-                        <div class="edu-coursework">
-                            <strong>Coursework:</strong> Python, Java, Data Science, Cloud Computing, Big Data, Generative AI, SQL Programming
-                        </div>
-                    </div>
-
-                    <div class="edu-card">
-                        <div class="edu-header">
-                            <div class="edu-title">Bachelor of Engineering in Computer Engineering</div>
-                            <span class="edu-date">August 2018 - July 2022</span>
-                        </div>
-                        <div class="edu-school" style="margin-bottom: 0.35rem;">Bangalore Institute of Technology</div>
-                        <div class="edu-coursework">
-                            <strong>Coursework:</strong> System Integration, Data Processing, LLM Evaluation, Software Engineering, Database Management
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Credentials Card -->
-                <div class="glass-panel section-card">
-                    <div class="section-title">
-                        <div class="section-icon">
-                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                        </div>
-                        Credentials
-                    </div>
-                    
-                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                        <div class="credential-item">
-                            <span class="credential-icon">🎖️</span>
-                            <span>Oracle Cloud Applications Integration Specialist</span>
-                        </div>
-                        <div class="credential-item">
-                            <span class="credential-icon">🎖️</span>
-                            <span>Oracle Cloud Generative AI Certification</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Publications Card -->
-                <div class="glass-panel section-card">
-                    <div class="section-title">
-                        <div class="section-icon">
-                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                        </div>
-                        Publications
-                    </div>
-                    
-                    <div class="publication-item">
-                        <span class="publication-title">"A Web Application for Fashion Recommendation"</span>
-                        <div style="font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.25rem;">
-                            Published in <em>IJIRCCE</em>, Volume 10, Issue 7, July 2022.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Achievements Card -->
-                <div class="glass-panel section-card">
-                    <div class="section-title">
-                        <div class="section-icon">
-                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-                        </div>
-                        Leadership & Achievements
-                    </div>
-                    
-                    <ul class="achievement-list">
-                        <li class="achievement-item">
-                            <span class="achievement-icon">✦</span>
-                            <span><strong>Presidential Award in "The Bharat Scouts":</strong> Representing national-level scout honors.</span>
-                        </li>
-                        <li class="achievement-item">
-                            <span class="achievement-icon">✦</span>
-                            <span><strong>Treasurer of the Lions' Club:</strong> Active community leadership and financial oversight.</span>
-                        </li>
-                        <li class="achievement-item">
-                            <span class="achievement-icon">✦</span>
-                            <span><strong>Captain of the College Badminton Team:</strong> Leading athletic matches, strategy, and roster coordination.</span>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Tejas Pantharapalya Venkatesh</p>
+      <a href="#top">Back to top ↑</a>
     </div>
+  </footer>
 
-    <!-- Live Customizer Drawer Modal -->
-    <div class="customizer-overlay" id="customizer-overlay"></div>
-    <div class="customizer-drawer" id="customizer-drawer">
-        <div class="customizer-header">
-            <h3 class="customizer-title">Live Resume Customizer</h3>
-            <button class="close-customizer-btn" id="btn-close-customizer">&times;</button>
-        </div>
-        <div class="customizer-body">
-            <div class="input-group">
-                <label class="input-label" for="cust-name">Full Name</label>
-                <input type="text" id="cust-name" class="text-input">
-            </div>
-            <div class="input-group">
-                <label class="input-label" for="cust-title">Professional Title</label>
-                <input type="text" id="cust-title" class="text-input">
-            </div>
-            <div class="input-group">
-                <label class="input-label" for="cust-email">Email Address</label>
-                <input type="email" id="cust-email" class="text-input">
-            </div>
-            <div class="input-group">
-                <label class="input-label" for="cust-phone">Phone Number</label>
-                <input type="text" id="cust-phone" class="text-input">
-            </div>
-            <div class="input-group">
-                <label class="input-label" for="cust-location">Location</label>
-                <input type="text" id="cust-location" class="text-input">
-            </div>
-            <div class="input-group">
-                <label class="input-label" for="cust-bio">Executive Summary / Bio</label>
-                <textarea id="cust-bio" class="text-input textarea-input" style="min-height: 120px;"></textarea>
-            </div>
-        </div>
-        <div class="customizer-footer">
-            <button class="btn btn-secondary" id="btn-reset-customizer">Reset Defaults</button>
-            <button class="btn btn-primary" id="btn-save-customizer">Save Changes</button>
-        </div>
-    </div>
-
-    <!-- Toast Notifications Container -->
-    <div class="toast-container" id="toast-container"></div>
-
-    <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

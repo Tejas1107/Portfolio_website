@@ -1,37 +1,29 @@
-# Tejas Venkatesh Portfolio
+# Tejas P Venkatesh: Portfolio
 
-A modern, interactive portfolio website built with HTML, CSS, and JavaScript to showcase Tejas Venkatesh's experience, skills, projects, and resume.
+A personal portfolio site for Tejas Pantharapalya Venkatesh, AI & Software Engineer in Dublin. It's plain static HTML, CSS and JavaScript with no build step, and it's set up to deploy on Netlify.
 
-## Features
-- Responsive one-page portfolio layout
-- Professional profile and contact information
-- Experience timeline and project showcase
-- Skill matrix with filtering and search
-- Recruiter fit calculator and outreach pitch preview
-- Printable resume-style layout
-- Resume PDF link
+Live at: https://tejas-pv.netlify.app/
 
 ## Files
-- `index.html` — Main structure of the portfolio page
-- `styles.css` — Styling and visual design
-- `script.js` — Interactive behavior and dynamic content
-- `Tejas_P_Venkatesh_CV.pdf` — Resume PDF
 
-## How to View Locally
-1. Open the project folder in your browser, or run a simple local server from the project directory.
-2. Example:
-   ```bash
-   python -m http.server 8000
-   ```
-3. Then open:
-   ```text
-   http://localhost:8000
-   ```
+| File | Purpose |
+| --- | --- |
+| `index.html` | All page content (hero, about, impact, experience, skills, education, contact) |
+| `styles.css` | Design tokens, dark and light themes, responsive layout |
+| `script.js` | Theme toggle, mobile menu, scroll reveal, metric count-up, hero pipeline animation |
+| `404.html` | Custom not-found page (Netlify serves it automatically) |
+| `netlify.toml` | Publish directory, security headers and caching |
+| `favicon.svg`, `robots.txt`, `sitemap.xml` | Site icon and files for search engines |
 
-## About
-This portfolio highlights Tejas's background in enterprise integration, AI engineering, cloud technologies, and software development.
+## Run locally
 
-## Contact
-Email: tejasvenkatesh1107@gmail.com
+```bash
+python -m http.server 8000
+```
 
-LinkedIn: https://www.linkedin.com/in/tejas-pv-657aa9201/
+Then open http://localhost:8000.
+
+## Deploy to Netlify
+
+- **Git:** push this repo to GitHub, then in Netlify go to *Add new site → Import from Git* and pick the repo. Leave the build command empty. The publish directory is `.` (already set in `netlify.toml`).
+- **Drag and drop:** drag this folder onto https://app.netlify.com/drop.
